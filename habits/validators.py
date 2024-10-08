@@ -16,7 +16,7 @@ class AssociatedWithoutRewardValidator:
         if habit.get("associted_habit") and habit.get("reward"):
             raise ValidationError(
                 f"В модели не должно быть заполнено одновременно и поле вознаграждения,"
-                f" и поле связанной привычки. Можно заполнить только одно из двух полей."
+                f"и поле связанной привычки. Можно заполнить только одно из двух полей."
             )
 
 
